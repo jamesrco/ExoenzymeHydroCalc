@@ -3,7 +3,7 @@
 
 <img src="img/graphical_range_selection_1.png" alt="Graphical selection of data range" width="898" height="396">
 
-Using cursor, allows user to graphically define ranges of data points in each incubation over which a linear regression should be applied (first panel); a regression is then calculated and superimposed to provide the user with feedback (second panel).
+<font size="-1">Using cursor, allows user to graphically define ranges of data points in each incubation over which a linear regression should be applied (first panel); a regression is then calculated and superimposed to provide the user with feedback (second panel).</font>
 
 The script is currently configured to parse data in .txt files from a Tecan F200 plate reader, but could be easily modified for data from another instrument. Current version of script presumes plates are configured according to [this protocol](https://github.com/jamesrco/GeoSciData_IO/blob/master/ExoenzymeHydroCalc/Enzyme Assay Protocol from Edwards et al. 2011.docx) used in Edwards et al. 2011. Example files containing sample data and standard curve data are given in a sub-repository.
 
