@@ -10,3 +10,8 @@ The script is currently configured to parse data in .txt files from a Tecan F200
 Although this script was designed for calculation of exoenzyme hydrolysis rates, the automated fitting of multiple standard curves and graphical selection of ranges for linear regression of multiple data series could be useful for any rate-based (bio)chemical calculation that is frequently repeated.
 
 For a good introduction to the use of bacterial exoenzyme activity assays in aquatic and marine environments, see H. Hoppe, 1993, "[Use of Fluorogenic Model Substrates for Extracellular Enzyme Activity (EEA) Measurement of Bacteria](http://ecosystems.mbl.edu/SES/MicrobialMethods/AssignedReadings/HoppeCh48_1983.pdf)," in Kemp, P. F., and others, eds., Handbook of Methods in Aquatic Microbial Ecology, pp. 423-431.
+
+Additional screenshot of automated standard curve fitting:
+
+<img src="img/scurve_fitting.png" alt="Standard curve fitting" width="467" height="350">
+
