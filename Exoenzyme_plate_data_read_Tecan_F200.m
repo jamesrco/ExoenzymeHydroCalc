@@ -1,5 +1,4 @@
 % Exoenzyme_plate_data_read_Tecan_F200.m
-
 % Created 13 Nov 2013 by J.R.C.
 % Modified 19 Jan 14 by J.R.C. to read in LMG 1401 cruise data
 % Modified 30 Nov 15 by J.R.C. to clean-up code & clarify comments for
@@ -47,11 +46,15 @@
 %  regression of data; this is invoked repeatedly during interactive
 %  calculation of the enzyme activity rates, below.
 %
+%  6. The MATLAB script dfdp.m, which calculates Jacobian numerical partial
+%  derivatives for use with nlleasqr.m (otherwise you'll get a weird error
+%  in nlleasqr.m)
+%
 %  An example log file and the file fluorcurves_cubicfitfunc.m are archived
 %  along with the most current version of this script to the GitHub
 %  repository https://github.com/jamesrco/ExoenzymeHydroCalc/
 %
-%  The other two MATLAB scripts are archived to
+%  The three other MATLAB scripts are archived to
 %  https://github.com/jamesrco/dependencies-useful-scripts/
 %
 %  Several "example" Tecan 200 plate reader data files containing real
@@ -72,6 +75,11 @@
 %
 %  3. User has specified the correct mass, in mg, of the substrates he or
 %  she added (see below)
+%
+%  4. User has added the directory in which this script resides to his/her
+%  current path.
+
+% some housekeeping
 
 close all;
 clear all;
@@ -130,7 +138,7 @@ MUFAMC_stdcurve_datafiles = dir(Standardcurves_filelist); % execute query to fin
 
 disp(['Reading in relevant information from the sample log, starting at row ' num2str(startrow) '...' char(10)]);
 
-[num_log txt_log raw_log] = xlsread(strcat(Tecanfiles_directory,'LMG 1401 Tecan F200 Log - MUF and AMC Enzyme Assays.xlsx'),'Sample Log');
+[num_log txt_log raw_log] = xlsread(strcat('LMG 1401 Tecan F200 Log - MUF and AMC Enzyme Assays.xlsx'),'Sample Log');
 
 % first, fields that don't require much conversion
 
