@@ -1,9 +1,8 @@
 # ExoenzymeHydroCalc
 [ExoenzymeHydroCalc](https://github.com/jamesrco/GeoSciData_IO/blob/master/ExoenzymeHydroCalc/): The script [Exoenzyme_plate_data_read_Tecan_F200.m](https://github.com/jamesrco/GeoSciData_IO/blob/master/ExoenzymeHydroCalc/Exoenzyme_plate_data_read_Tecan_F200.m) and dependencies. Interactively calculates rates of bacterial exoenzyme hydrolysis using fluoresence data from 96-well plate incubations with fluorogenic substrates. Allows user to graphically define ranges of related data points in a given incubation over which a linear regression should be applied:
 
-<img src="img/graphical_range_selection_1.png" alt="Graphical selection of data range" style="width:300;height:300">
-
-![Graphical selection of data range](img/graphical_range_selection_1.png) ![Obtain linear fits](img/graphical_range_selection_2.png)
+<img src="img/graphical_range_selection_1.png" alt="Graphical selection of data range" width="558" height="495">
+<img src="img/graphical_range_selection_2.png" alt="Obtain linear fits" width="558" height="495">
 
 Currently configured to parse data in .txt files from a Tecan F200 plate reader, but could be easily modified for data from another instrument. Current version of script presumes plates are configured according to [this protocol](https://github.com/jamesrco/GeoSciData_IO/blob/master/ExoenzymeHydroCalc/Enzyme Assay Protocol from Edwards et al. 2011.docx) used in Edwards et al. 2011. Example files containing sample data and standard curve data are given in a sub-repository.
 
