@@ -5,7 +5,7 @@ Using cursor, allows user to graphically define ranges of data points in each in
 
 <img src="img/graphical_range_selection_1.png" alt="Graphical selection of data range" width="898" height="396">
 
-The script is currently configured to parse data in .txt files from a Tecan F200 plate reader, but could be easily modified for data from another instrument. Current version of script presumes plates are configured according to [this protocol](https://github.com/jamesrco/GeoSciData_IO/blob/master/ExoenzymeHydroCalc/Enzyme_Assay_Protocol_from_Edwards_et_al._2011.docx) used in Edwards et al. 2011. Example files containing sample data and standard curve data are given in a sub-repository.
+The script is currently configured to parse data in .txt files from a Tecan F200 plate reader, but could be easily modified for data from another instrument. Current version of script presumes plates are configured according to [this protocol](https://github.com/jamesrco/ExoenzymeHydroCalc/blob/master/Enzyme_Assay_Protocol_from_Edwards_et_al._2011.docx) used in Edwards et al. 2011. Example files containing sample data and standard curve data are given in a sub-repository.
 
 Although this script was designed for calculation of exoenzyme hydrolysis rates, the automated fitting of multiple standard curves and graphical selection of ranges for linear regression of multiple data series could be useful for any rate-based (bio)chemical calculation that is frequently repeated.
 
